@@ -1,0 +1,76 @@
+.player-ui-overlay {
+    font-family: sans-serif;
+    position: absolute;
+    opacity: 0;
+    
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+}
+
+.player-ui-overlay:hover {
+    opacity: 1;
+}
+
+.player-ui-buttons {
+    height: 34px;
+    position: absolute;
+    background-color: black;
+    opacity: .3;
+}
+
+.player-ui-button {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    float: left;
+    margin: 4px 4px 4px 5px;
+    background-color: #303331;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    border: solid #A3A3A3 1px;
+    color: #D6D6D6;
+    position: absolute;
+    bottom: 0;
+        
+    -webkit-transition: -webkit-transform .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+    -moz-transition: -moz-transform .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+    -o-transition: -o-transform .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.player-ui-button:hover {
+    background-color: black;
+    color: #97F7A8;
+    
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.player-ui-button-pause:hover {
+    color: #F7C5BC;
+}
+
+.player-ui-button:active {
+    background-color: #A3A3A3;
+}
+
+.play-ui-icon-play {
+    margin: 4px 0 0 4px;
+    width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-left: 16px solid;
+	border-bottom: 8px solid transparent;
+}
+
+/* You need two of these to have both vertical bars */
+.play-ui-icon-pause {
+    margin: 4px 0 0 5px;
+    width: 0px;
+	height: 12px;
+	border-style: solid;
+	border-width: 2px;
+	float: left;
+}
